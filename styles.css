@@ -1,0 +1,339 @@
+/* styles.css */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.header {
+    background-color: #004a99;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideDown 1s ease-in-out;
+}
+
+.header-img {
+    float: left;
+    margin-right: 10px;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 2em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.nav {
+    margin-top: 0;
+    margin-right: 20px; /* Ajuste adicional para mover los enlaces más a la derecha */
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+.hero {
+    text-align: center;
+    padding: 150px 20px 60px; /* Ajustar el padding para hacer espacio para el título */
+    background: linear-gradient(to bottom, #004a99, #0099ff);
+    color: #fff;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-title {
+    font-size: 3em;
+    margin: 0 0 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-subtitle {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-text {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.hero-img {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, opacity 0.3s;
+    animation: zoomIn 1s ease-in-out;
+}
+
+.hero-img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.hero-button {
+    background-color: #ffcc00;
+    color: #004a99;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 10px;
+    animation: slideIn 2s ease-in-out;
+    margin-top: 20px;
+}
+
+.hero-button:hover {
+    background-color: #e6b800;
+    transform: translateY(-5px);
+}
+
+/* Estilos para la sección de servicios */
+
+.services {
+    padding: 80px 20px;
+    background-color: #fefefe;
+    text-align: center;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.services-title {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    animation: fadeInRight 1.5s ease-in-out;
+    color: #004a99;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #004a99;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.services-item {
+    font-size: 1.5em;
+    margin: 15px;
+    padding: 20px;
+    background-color: #e6f2ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+    animation: fadeInRight 1s ease-in-out;
+    flex: 1 1 200px;
+}
+
+.services-item:hover {
+    transform: translateY(-10px);
+    background-color: #cce0ff;
+}
+
+.brand {
+    padding: 80px 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.brand-title {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.brand-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.form-fieldset {
+    border: none;
+    margin: 0 0 20px;
+    animation: fadeInLeft 1.5s ease-in-out;
+}
+
+.form-legend {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    animation: fadeInLeft 1.5s ease-in-out;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    animation: fadeInLeft 1.5s ease-in-out;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.form-input:focus {
+    border-color: #004a99;
+}
+
+.form-submit {
+    background-color: #004a99;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.form-submit:hover {
+    background-color: #003366;
+    transform: translateY(-5px);
+}
+
+.social {
+    padding: 60px 20px;
+    background-color: #004a99;
+    color: #fff;
+    text-align: center;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.social-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.social-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-link:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.footer-text {
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.footer-link {
+    color: #ffcc00;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer-link:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    from
+}
